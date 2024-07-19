@@ -1,0 +1,203 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage[hidelinks]{hyperref}
+    \usepackage[left=2cm, right=2cm, top=2cm]{geometry}
+    \usepackage{longtable}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+    \vspace*{-40pt}
+
+    
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Profile
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \vspace*{-2pt}
+  \begin{center}
+    {\Huge \scshape {Mohamed Zaki}}\\
+    \vspace*{2pt}
+    \ {Software Engineer \textbar{} React Frontend Developer}\\
+    \vspace*{2pt}
+    \href{mailto:mohamedzzaki2000s@gmail.com}{mohamedzzaki2000s@gmail.com} | \href{tel:+20 1276194747}{+20 1276194747} | Cairo, Egypt\\
+    \vspace*{2pt}
+    \textbf{\href{https://www.linkedin.com/in/mohamed-zaki-55983b287/}{Linkedin | }}\textbf{\href{https://github.com/MohamedZakidev}{GitHub}}\\
+  \end{center}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     Education
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \header{Education}
+      \vspace{2mm}
+      \textbf{Helwan University}\\
+Computer Science and Artificial Intelligence Bachelor \hfill 2019 - 2024\\
+
+\vspace{2mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     Experience
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \header{Experience}
+      \vspace{2mm}
+
+      \textbf{Reference laboratory for university hospitals}\textbf{ | Data entry and Receptionist} \hfill  2020 - 2022\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item  Managed patient records in the lab information management system (LIMS), ensuring data integrity.
+\item  Answered inquiries, scheduled appointments, and coordinated with healthcare staff for efficient operations.
+\item  Adhered to health and safety protocols to prevent COVID-19 spread within the facility.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Skills
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \header{Skills}
+  \vspace{2mm}
+  \begin{longtable}{p{4cm}p{12cm}}
+  Programming Languages: & HTML (Seo Principles), Css, JavaScript \\
+  Libraries/Frameworks: & React.js, React Router v6, Chakra UI, Firebase \\
+  Tools / Platforms: & VS Code, Git, Github Desktop \\
+  \end{longtable}
+  \vspace{1mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     Projects
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \header{Projects / Open-Source}
+      \vspace{2mm}
+      {\textbf{Career Guidance Network (Graduation Project A)}}\textbf{ | \href{https://github.com/AbdelrahmanMostafa0/career-guidance-network}{Link}}\hfill{\sl Next,js, Tailwind css, Python Django}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item[] Designed and developed a professional networking platform similar to LinkedIn for my graduation project. The platform enables users to create detailed profiles, connect with professionals, search for job opportunities, and access career advice.
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{Netflix-Clone}}\textbf{ | \href{https://singular-malabi-8ac66d.netlify.app/}{Link}}\hfill{\sl React, React Router v6, Firebase}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item[] A Netflix-Clone is a streaming platform that replicates the user interface, features, and content library of Netflix using React.js and compound components design pattern to create a dynamic and responsive web application.
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{Space Travel}}\textbf{ | \href{https://clinquant-manatee-63dd3b.netlify.app/}{Link}}\hfill{\sl Html, Css, JavaScript}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item[] Practical project focused on applying modern CSS techniques to build a responsive and visually engaging
+\item[] space travel-themed website.
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{Van Life}}\textbf{ | \href{https://keen-cobbler-54b432.netlify.app/}{Link}}\hfill{\sl React, React Router 6, Firebase}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item[] project centered around building a dynamic and interactive web application for a Vanlife rental service using React with the best practices and Data layer ApI
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{Quizzical}}\textbf{ | \href{https://phenomenal-chebakia-542cab.netlify.app/}{Link}}\hfill{\sl React, Css. APIS}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item[] Developed a dynamic quiz app using React.js to provide an interactive and engaging user experience.
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{Personal Dashboard}}\textbf{ | \href{https://github.com/MohamedZakidev/Personal-Dashboard}{Link}}\hfill{\sl Html, Css, JavaSCript, APIs}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item[] Developed a browser extension that enhances the new tab experience in the browser by displaying the current weather, user\textquotesingle{}s city, and Dogecoin price.
+\end{itemize}
+          \vspace*{3mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      %
+      %     Certifications
+      %
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \header{Certifications}
+      \vspace{2mm}
+      • CERTIFICATE OF COMPLETION - The Frontend Developer Career Path - \textbf{\href{https://v1.scrimba.com/certificate/u6b2wvcZ/gfrontend}{Link - Scrimba}}\\
+\vspace*{1mm}
+      • CERTIFICATE OF COMPLETION - Responsive Web Design - \textbf{\href{https://v1.scrimba.com/certificate/u6b2wvcZ/gresponsive}{Link - Scrimba}}\\
+\vspace*{1mm}
+      • CERTIFICATE OF COMPLETION - Advanced React - \textbf{\href{https://v1.scrimba.com/certificate/u6b2wvcZ/greact}{Link - Scrimba}}\\
+\vspace*{1mm}
+      • CERTIFICATE OF COMPLETION - UI Design - \textbf{\href{https://v1.scrimba.com/certificate/u6b2wvcZ/gdesignbootcamp}{Link - Scrimba}}\\
+\vspace*{1mm}
+      • CERTIFICATE OF COMPLETION - Getting started with Springboot - \textbf{\href{https://drive.google.com/file/d/132WvUhwo\_owlkpVQrIBNwRRe3v4OZNKg/view}{Link - Amigoscode}}\\
+\vspace*{1mm}
+      \vspace{2mm}
+
+
+
+    \ 
+    \end{document}
